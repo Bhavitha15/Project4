@@ -1,0 +1,216 @@
+body{
+    background-color: black;
+}
+h1{
+    color: chartreuse;
+}
+.robot{
+    height:500px;
+    border:2px solid red;
+}
+.head{
+    height:150px;
+    width:150px;
+    border-top-left-radius: 50% ;
+    border-top-right-radius: 50%;
+    background-color: chartreuse;
+    margin:auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: width 1s ease;
+}
+.robot:hover .head{
+    width:250px;
+    animation: movehead 1s infinite;
+}
+@keyframes movehead {
+    0%{
+        width: 150px;
+    }
+    25%{
+        width:250px;
+    }
+    50%{
+        width: 150px;
+    }
+    75%{
+        width:250px;
+    }
+    100%{
+        width: 150px;
+    }
+}
+.eyes
+{
+    position: absolute;
+    justify-content: space-evenly;
+    display:flex;
+    width:150px;
+    margin-top:7%;
+}
+.leye{
+    height:20px;
+    width:20px;
+    background-color: black;
+    border-radius: 50%;
+}
+.reye{
+    height:20px;
+    width:20px;
+    background-color: black;
+    border-radius: 50%;
+}
+.body{
+    display: flex;
+    justify-content: space-evenly;
+    width:250px;
+    margin: auto;
+}
+.hand1{
+    height:100px;
+    width:25px;
+    background-color: chartreuse;
+    border-radius: 100px;
+    margin-top: 20px;
+    transition: transform 1s ease;
+}
+.robot:hover .hand1{
+    transform: rotate(90deg);
+    transform-origin: top center;
+    animation: movehand1 2s infinite;
+}
+@keyframes movehand1 {
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+    50%{
+        transform: rotate(90deg);
+        transform-origin: top center;
+    }
+    100%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+}
+.center{
+    height:150px;
+    width:150px;
+    background-color: chartreuse;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    transition: transform 1s ease;
+}
+.robot:hover .center{
+    transform:rotate(360deg);
+    animation: movecenter 2s infinite;
+}
+@keyframes movecenter {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(360deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.hand2{
+    height:100px;
+    width:25px;
+    background-color: chartreuse;
+    border-radius: 100px;
+    margin-top: 20px;
+    transition: transform 1s ease;
+}
+.robot:hover .hand2{
+    transform: rotate(-90deg);
+    transform-origin: top center;
+    animation: movehand2 2s infinite;
+}
+@keyframes movehand2 {
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+    50%{
+        transform: rotate(-90deg);
+        transform-origin: top center;
+    }
+    100%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+}
+
+.legs{
+    display: flex;
+    justify-content: space-evenly;
+    width:100px;
+    margin: auto;
+    margin-top: 10px;
+}
+.leg1{
+    height:100px;
+    width:25px;
+    background-color: chartreuse;
+    border-radius: 0 0 100px 100px;
+    transition: transform 1s ease;
+}
+.robot:hover .leg1{
+    transform: rotate(45deg);
+    transform-origin: top center;
+    animation: moveleg1 1s infinite;
+}
+@keyframes moveleg1 {
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+    50%{
+        transform: rotate(45deg);
+        transform-origin: top center;
+    }
+    100%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+}
+
+.leg2{
+    height:100px;
+    width:25px;
+    background-color: chartreuse;
+    border-radius: 0 0 100px 100px;
+    transition: transform 1s ease;
+}
+.robot:hover .leg2{
+    transform: rotate(-45deg);
+    transform-origin: top center;
+    animation: moveleg2 1s infinite;
+}
+@keyframes moveleg2 {
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+    50%{
+        transform: rotate(-45deg);
+        transform-origin: top center;
+    }
+    100%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+}
+
+
+
